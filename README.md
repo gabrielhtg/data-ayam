@@ -12,6 +12,8 @@ Fitur dari program ini :
 - Melakukan kalkulasi progress dari pengeraman telur
 - Menampilkan progress bar dari pengeraman telur serta persentasinya
 
+![ss](Screenshot_20220722_095206.png)
+
 ## About Me
 
 I'm a student at Del Institute of Technology. <br>
