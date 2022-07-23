@@ -13,7 +13,7 @@ import java.util.Scanner;
 
 
 public class Main {
-    static String lokasi_data = "/home/gabriel/projects/java/workspace/ayam_v2/data.txt";
+    static String lokasi_data = "/home/gabriel/projects/java/workspace/data_ayam/data.txt";
     static File data = new File(lokasi_data); // membuat objek data sebagai representasi dari file data yang sudah dibuat sebelumnya
     static int banyak_ayam;
 
