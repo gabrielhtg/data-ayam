@@ -10,6 +10,7 @@ import java.time.Duration;
 import java.time.Instant;
 import java.util.Date;
 import java.util.Scanner;
+import gabriel_tools.*; // class tambahan
 
 
 public class Main {
@@ -23,11 +24,13 @@ public class Main {
         int banyak_anak; // digunakan untuk meminta input banyak anak ayam dari user
         String operasi; // digunakan sebagai tempat dari value operasi yang dapat dilakukan pada program ini (seperti add, remove, list, dll)
 
+        Bersihkan.clearScreen(); // bagian ini mungkin error. Karena ini adalah class tambahan yang kubuat sendiri
         System.out.println("--------------------------------------------------------------");
         System.out.println("                     Program Data Ayam");
         Scanner scan = new Scanner(System.in);
         
         while (true) {
+            // Bersihkan.clearScreen();
             System.out.println("--------------------------------------------------------------");
             list(); // menampilkan list ayam yang tersedia di data. Kalau kosong ya kosong.
             System.out.println("--------------------------------------------------------------");
@@ -100,6 +103,7 @@ public class Main {
                     long selisih_hari = selisih_milisekon / (1000 * 60 * 60 * 24); // mengonversi dari mili sekon ke dalam satuan hari
 
                     float persentasi = Float.valueOf(selisih_hari) / 21 * 100; // mendapatkan persentasi progress penetasan telur
+                    System.out.printf("Sudah mengerami selama      : %d hari\n", selisih_hari);
 
                     System.out.print("\n["); // membuat bagian awal dari progress barnya
 
